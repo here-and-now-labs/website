@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Tomorrow Mono";
+  src: url("fonts/tomorrow-dashboard/jetbrains-mono-latin.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 700;
+}
+
 :root {
   --background: #faf9f6;
   --ink: #14141a;
@@ -6,6 +14,7 @@
   --line: rgb(20 20 26 / 12%);
   --serif: "Fraunces", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --mono: "Tomorrow Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
 }
 
 *,
@@ -128,17 +137,17 @@ a:hover {
 .wordmark {
   margin: 0;
   color: var(--ink);
-  font-family: var(--serif);
-  font-size: clamp(3.25rem, 7vw, 6.5rem);
-  font-weight: 400;
-  letter-spacing: -0.045em;
-  line-height: 0.93;
+  font-family: var(--mono);
+  font-size: clamp(2.65rem, 5.6vw, 5.25rem);
+  font-weight: 500;
+  letter-spacing: -0.07em;
+  line-height: 0.98;
 }
 
 .wordmark em {
   display: block;
   margin-left: clamp(1.5rem, 7vw, 5rem);
-  font-style: italic;
+  font-style: normal;
 }
 
 .tagline {
@@ -219,6 +228,11 @@ a:hover {
   margin: 0;
   line-height: 1.45;
   overflow-wrap: anywhere;
+}
+
+.entity-list dd a {
+  font-size: 0.78rem;
+  letter-spacing: -0.02em;
 }
 
 .entity-list address {
