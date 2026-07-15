@@ -6,6 +6,14 @@
   font-weight: 400 700;
 }
 
+@font-face {
+  font-family: "Tomorrow Inter";
+  src: url("fonts/tomorrow-dashboard/inter-latin.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400 700;
+}
+
 :root {
   --background: #faf9f6;
   --ink: #14141a;
@@ -15,6 +23,7 @@
   --serif: "Fraunces", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "Tomorrow Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --tomorrow-heading: "Tomorrow Inter", Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 *,
@@ -137,17 +146,18 @@ a:hover {
 .wordmark {
   margin: 0;
   color: var(--ink);
-  font-family: var(--mono);
-  font-size: clamp(2.65rem, 5.6vw, 5.25rem);
-  font-weight: 500;
-  letter-spacing: -0.07em;
-  line-height: 0.98;
+  font-family: var(--tomorrow-heading);
+  font-size: clamp(3rem, 6.2vw, 5.75rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  line-height: 0.95;
 }
 
 .wordmark em {
   display: block;
   margin-left: clamp(1.5rem, 7vw, 5rem);
-  font-style: normal;
+  font-style: inherit;
 }
 
 .tagline {
@@ -301,10 +311,11 @@ a:hover {
 
 .placeholder-card h1 {
   margin: 0;
-  font-family: var(--mono);
-  font-size: clamp(2.25rem, 7vw, 4rem);
-  font-weight: 500;
-  letter-spacing: -0.06em;
+  font-family: var(--tomorrow-heading);
+  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
   line-height: 1;
 }
 
