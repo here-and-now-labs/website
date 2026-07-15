@@ -27,13 +27,38 @@ html {
 }
 
 body {
+  position: relative;
   min-height: 100svh;
+  isolation: isolate;
   font-family: var(--sans);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.005em;
   -webkit-font-smoothing: antialiased;
+}
+
+body::before,
+body::after {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+}
+
+body::before {
+  background-image:
+    linear-gradient(rgb(17 17 17 / 5%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(17 17 17 / 5%) 1px, transparent 1px);
+  background-size: 84px 84px;
+}
+
+body::after {
+  background:
+    radial-gradient(circle at 8% 4%, rgb(255 210 168 / 74%) 0, rgb(255 210 168 / 25%) 23%, transparent 48%),
+    radial-gradient(circle at 96% 10%, rgb(255 185 139 / 60%) 0, rgb(255 185 139 / 20%) 24%, transparent 49%),
+    radial-gradient(circle at 52% 104%, rgb(255 205 158 / 50%) 0, rgb(255 205 158 / 15%) 30%, transparent 58%);
 }
 
 ::selection {
