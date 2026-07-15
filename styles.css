@@ -266,6 +266,40 @@ a:hover {
   margin-inline: auto;
 }
 
+.legal-placeholder {
+  display: grid;
+  min-height: 100svh;
+  align-items: center;
+}
+
+.placeholder-card {
+  padding: clamp(2rem, 6vw, 4rem);
+  border: 1px solid rgb(20 20 26 / 14%);
+  border-radius: 1.25rem;
+  box-shadow: 0 24px 70px rgb(91 55 31 / 10%);
+  background: rgb(250 249 246 / 72%);
+  backdrop-filter: blur(18px);
+}
+
+.placeholder-card .eyebrow {
+  margin-bottom: 1.5rem;
+}
+
+.placeholder-card h1 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+.placeholder-card > p:last-child {
+  margin: 1.25rem 0 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
 .legal-back {
   display: inline-block;
   margin-bottom: clamp(2rem, 5vh, 3rem);
