@@ -1,6 +1,6 @@
-# Here Now Labs website
+# Here & Now Technologies website
 
-Static, dependency-free website for [herenowlabs.xyz](https://herenowlabs.xyz).
+Static, dependency-free website for [hereandnowtech.com](https://hereandnowtech.com).
 
 ## GitHub Pages
 
@@ -10,7 +10,7 @@ In the repository, open **Settings → Pages** and choose:
 - Branch: **main**
 - Folder: **/ (root)**
 
-The included `CNAME` file configures `herenowlabs.xyz` as the custom domain.
+The included `CNAME` file configures `hereandnowtech.com` as the custom domain.
 
 At the DNS provider, configure the apex domain with GitHub Pages' four `A` records:
 
